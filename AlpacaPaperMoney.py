@@ -41,7 +41,8 @@ class AlpacaPaperMoneyBot(object):
 				self.current_order = self.api.submit_order(self.symbol, sell_quantity, 'sell', 'limit', 'day', self.last_price)
 
 if __name__ == '__main__':
-	bot = AlpacaPaperMoneyBot('FB')
+	ticker = input('What stock would you like execute the trading algorithim on? ')
+	bot = AlpacaPaperMoneyBot(ticker)
 	bot.submit_order(100)
 
 
