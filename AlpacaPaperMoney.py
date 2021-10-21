@@ -42,7 +42,8 @@ class AlpacaPaperMoneyBot(object):
 
 if __name__ == '__main__':
 	ticker = input('What stock would you like execute the trading algorithim on? ')
+	quantity = input('How many shares would you like to trade? ')
 	bot = AlpacaPaperMoneyBot(ticker)
-	bot.submit_order(100)
+	bot.submit_order(int(quantity))
 
 
